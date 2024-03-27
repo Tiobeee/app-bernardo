@@ -37,7 +37,7 @@ export default function TempoScreen() {
           <Card style={styles.card}>
             <Card.Title title="Detalhes do Tempo" />
             <Card.Content>
-              <Text>Temperatura atual cai de boca: {tempoData.main.temp}°C</Text>
+              <Text>Temperatura atual: {tempoData.main.temp}°C</Text>
               {/* <Text>Sensação térmica: {tempoData.main.feels_like}°C</Text>
               <Text>Temperatura mínima: {tempoData.main.temp_min}°C</Text>
               <Text>Temperatura máxima: {tempoData.main.temp_max}°C</Text>

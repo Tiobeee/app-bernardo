@@ -4,6 +4,7 @@ import HomeScreen from "../screens/HomeScreen";
 import SobreScreen from "../screens/SobreScreen";
 import ProdutosScreen from "../screens/ProdutoScreen";
 import TempoScreen from "../screens/TempoScreen";
+import TempoScreenAula from "../screens/TempoScreenAula";
 
 const Stack = createNativeStackNavigator();
 const Tab = createMaterialBottomTabNavigator();
@@ -50,6 +51,14 @@ function TabNavigator() {
       <Tab.Screen
         name="TempoScreen"
         component={TempoScreen}
+        options={{
+          title: "Tempo",
+          tabBarIcon: "weather-sunny",
+        }}
+      />
+      <Tab.Screen
+        name="TempoScreenAula"
+        component={TempoScreenAula}
         options={{
           title: "Tempo",
           tabBarIcon: "weather-sunny",
